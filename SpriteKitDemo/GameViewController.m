@@ -8,6 +8,7 @@
 
 #import "GameViewController.h"
 #import "GameScene.h"
+#import "GameStartScene.h"
 
 @implementation GameViewController
 
@@ -23,7 +24,7 @@
     skView.ignoresSiblingOrder = YES;
     
     // Create and configure the scene.
-    GameScene *scene = [GameScene nodeWithFileNamed:@"GameScene"];
+    GameStartScene *scene = [GameStartScene nodeWithFileNamed:@"GameStartScene"];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
